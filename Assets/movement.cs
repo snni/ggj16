@@ -3,8 +3,8 @@ using System.Collections;
 
 public class movement : MonoBehaviour {
 
-	public float gravity = 2;
-	public float vspeed = 1;
+	public float gravity = 0.3f;
+	public float vspeed = 0.1f;
 	public GameObject Player;
 	// Use this for initialization
 	void Start () {
@@ -13,7 +13,7 @@ public class movement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		vspeed = +0.1;
+		vspeed += 0.01f;
 		float h = Input.GetAxis("Horizontal");
 		float v = -(gravity * vspeed);
 
