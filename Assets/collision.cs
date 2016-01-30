@@ -1,20 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-
 public class collision : MonoBehaviour {
-	public GameObject Player;
-	// Use this for initialization
-	void OnControllerColliderHit(ControllerColliderHit Player) {
-		Player.gameObject.transform.position = Vector3.zero;
-	}
+	public int col;
 
-	void Start () {
-	
-	}
+	void OnCollisionEnter2D(Collision2D collide){
 
-	// Update is called once per frame
-	void Update () {
-	
+		if(collide.gameObject.CompareTag("leftwall") || collide.gameObject.CompareTag("rightwall")){}
+
+		col = -1;
+
 	}
 }
