@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
 
 public class movement : MonoBehaviour {
 
@@ -11,6 +14,7 @@ public class movement : MonoBehaviour {
 	public AudioSource kissAudio;
 	public AudioSource weeAudio;
 	public Text scoreText;
+	public Animation deathanim;
 	private bool death;
 	// Use this for initialization
 	void Start () {
@@ -18,7 +22,7 @@ public class movement : MonoBehaviour {
 	}
 	private int score = 0;
 	void OnCollisionEnter2D(Collision2D collide){
-		
+
 		if (collide.gameObject.CompareTag ("leftwall") || collide.gameObject.CompareTag ("rightwall")) {
 			clickAudio.Play ();
 		}
@@ -27,22 +31,26 @@ public class movement : MonoBehaviour {
 			Destroy(collide.gameObject);
 			Debug.Log("It's a heart!");
 			score += 1;
-			scoreText.text = "Hearts Collected : "+ score.ToString();		
+			scoreText.text = "Hearts Stolen : "+ score;	
 		}
 
 		if (collide.gameObject.CompareTag ("goal")) {
 			weeAudio.Play ();
+			deathanim.Play ();
 			death = true;
 			Debug.Log("I'm happy to die for my master");
-	
-		}
-		}
 
-	
+		}
+	}
+
+
 	// Update is called once per frame
 	void Update () {
-		if(death && weeAudio.isPlaying == false)
-			Destroy(Player);
+		if (death && weeAudio.isPlaying == false) {
+			Destroy (Player);
+		}
+			
+			
 		vspeed += 0.01f;
 		float h = Input.GetAxis("Horizontal");
 
