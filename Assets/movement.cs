@@ -9,9 +9,12 @@ public class movement : MonoBehaviour {
 	public GameObject Player;
 	public AudioSource clickAudio;
 	public AudioSource kissAudio;
+	public AudioSource weeAudio;
 	public Text scoreText;
+	private bool death;
 	// Use this for initialization
 	void Start () {
+		death = false;
 	}
 	private int score = 0;
 	void OnCollisionEnter2D(Collision2D collide){
@@ -28,8 +31,8 @@ public class movement : MonoBehaviour {
 		}
 
 		if (collide.gameObject.CompareTag ("goal")) {
-			kissAudio.Play ();
-			Destroy(Player);
+			weeAudio.Play ();
+			death = true;
 			Debug.Log("I'm happy to die for my master");
 	
 		}
@@ -38,7 +41,8 @@ public class movement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if(death && weeAudio.isPlaying == false)
+			Destroy(Player);
 		vspeed += 0.01f;
 		float h = Input.GetAxis("Horizontal");
 
