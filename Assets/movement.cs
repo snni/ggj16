@@ -14,6 +14,7 @@ public class movement : MonoBehaviour {
 	public AudioSource kissAudio;
 	public AudioSource weeAudio;
 	public Text scoreText;
+	public Text goalText;
 	public Animation deathanim;
 	private bool death;
 	// Use this for initialization
@@ -34,11 +35,15 @@ public class movement : MonoBehaviour {
 			scoreText.text = "Hearts Stolen : "+ score;	
 		}
 
-		if (collide.gameObject.CompareTag ("goal")) {
+		if (collide.gameObject.CompareTag ("goal") || collide.gameObject.CompareTag ("land")) {
 			weeAudio.Play ();
 			deathanim.Play ();
 			death = true;
 			Debug.Log("I'm happy to die for my master");
+			if (collide.gameObject.CompareTag ("goal")) {
+				goalText.text = "Yay!\n You finished the ritual\nsuccessfully with "+ score + " hearts";}
+			if (collide.gameObject.CompareTag ("land")) {
+				goalText.text = "Buu!\n You finished the ritual\nunsuccessfully with "+ score + " hearts";}
 
 		}
 	}
