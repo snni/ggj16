@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5ec573c1458574417b58c11d10d7c76f
-timeCreated: 1454115397
+timeCreated: 1454188449
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -8,6 +8,12 @@ TextureImporter:
     21300002: Desktop Landscape_1
     21300004: Desktop Landscape_2
     21300006: Desktop Landscape_3
+    21300008: Desktop Landscape_4
+    21300010: Desktop Landscape_5
+    21300012: Desktop Landscape_6
+    21300014: Desktop Landscape_7
+    21300016: Desktop Landscape_8
+    21300018: Desktop Landscape_9
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -62,7 +68,7 @@ TextureImporter:
         width: 127
         height: 842
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline:
       - - {x: 46.5, y: -237}
@@ -182,6 +188,131 @@ TextureImporter:
         - {x: 35, y: -37.5}
         - {x: 43, y: 16.5}
         - {x: 43, y: 45.5}
+    - name: Desktop Landscape_4
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 296
+        width: 106
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -53, y: 22}
+        - {x: -53, y: -15}
+        - {x: -44, y: -22}
+        - {x: 53, y: -22}
+        - {x: 53, y: 16}
+        - {x: 43, y: 22}
+    - name: Desktop Landscape_5
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 116
+        width: 86
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 9, y: 52.5}
+        - {x: -3, y: 52.5}
+        - {x: -7, y: 50.5}
+        - {x: -5, y: 46.5}
+        - {x: -13, y: 52.5}
+        - {x: -41, y: 52.5}
+        - {x: -43, y: 51.5}
+        - {x: -43, y: -18.5}
+        - {x: -41, y: -29.5}
+        - {x: -26, y: -52.5}
+        - {x: 18, y: -52.5}
+        - {x: 39, y: -27.5}
+        - {x: 43, y: 15.5}
+        - {x: 43, y: 37.5}
+    - name: Desktop Landscape_6
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 132
+        width: 86
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 43, y: 38}
+        - {x: 17, y: 44}
+        - {x: -31, y: 44}
+        - {x: -43, y: 37}
+        - {x: -43, y: -7}
+        - {x: -41, y: -22}
+        - {x: -34, y: -43}
+        - {x: -28, y: -44}
+        - {x: 18, y: -44}
+        - {x: 25, y: -37}
+        - {x: 37, y: -24}
+        - {x: 43, y: 0}
+    - name: Desktop Landscape_7
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 137
+        width: 86
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 36}
+        - {x: -5, y: 31}
+        - {x: -6, y: 33}
+        - {x: -8, y: 36}
+        - {x: -32, y: 36}
+        - {x: -43, y: 32}
+        - {x: -43, y: -14}
+        - {x: -28, y: -36}
+        - {x: 21, y: -36}
+        - {x: 43, y: -10}
+        - {x: 43, y: 29}
+        - {x: 12, y: 36}
+    - name: Desktop Landscape_8
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 149
+        width: 106
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -43, y: 27.5}
+        - {x: -47, y: 25.5}
+        - {x: -53, y: 7.5}
+        - {x: -53, y: -20.5}
+        - {x: -31, y: -27.5}
+        - {x: 48, y: -27.5}
+        - {x: 53, y: -26.5}
+        - {x: 53, y: 20.5}
+        - {x: 40, y: 27.5}
+    - name: Desktop Landscape_9
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 150
+        width: 106
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -47, y: 24}
+        - {x: -53, y: 10}
+        - {x: -53, y: -14}
+        - {x: -22, y: -24}
+        - {x: 53, y: -24}
+        - {x: 53, y: 24}
     outline: []
   spritePackingTag: 
   userData: 
