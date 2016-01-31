@@ -26,6 +26,13 @@ public class movement : MonoBehaviour {
 			score += 1;
 			scoreText.text = "Hearts Collected : "+ score.ToString();		
 		}
+
+		if (collide.gameObject.CompareTag ("goal")) {
+			kissAudio.Play ();
+			Destroy(Player);
+			Debug.Log("I'm happy to die for my master");
+	
+		}
 		}
 
 	
